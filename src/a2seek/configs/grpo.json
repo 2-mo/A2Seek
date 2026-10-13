@@ -1,0 +1,52 @@
+{
+  "stage": "rlhf",
+  "variant": "cot_single_reflection",
+  "model": null,
+  "arguments": {
+    "rlhf_type": "grpo",
+    "train_type": "lora",
+    "system": "",
+    "torch_dtype": "bfloat16",
+    "reward_funcs": [
+      "format_reward",
+      "cls_accuracy",
+      "bbox_accuracy",
+      "length_reward",
+      "seeking_reward"
+    ],
+    "reward_weights": [
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0",
+      "1.0"
+    ],
+    "num_generations": "2",
+    "per_device_train_batch_size": "2",
+    "per_device_eval_batch_size": "2",
+    "learning_rate": "1e-5",
+    "lora_rank": "8",
+    "lora_alpha": "32",
+    "gradient_accumulation_steps": "8",
+    "eval_strategy": "no",
+    "save_steps": "100",
+    "save_total_limit": "3",
+    "logging_steps": "5",
+    "max_length": "8192",
+    "max_completion_length": "1024",
+    "warmup_ratio": "0.05",
+    "dataloader_num_workers": "4",
+    "log_completions": "true",
+    "save_strategy": "steps",
+    "split_dataset_ratio": "0",
+    "target_modules": [
+      "all-linear"
+    ],
+    "gradient_checkpointing": "true",
+    "lr_scheduler_type": "cosine",
+    "num_train_epochs": "1",
+    "use_vllm": "false",
+    "model_type": "qwen2_5_vl"
+  },
+  "num_frames": 1
+}

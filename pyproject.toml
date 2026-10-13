@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "a2seek"
+version = "0.1.0"
+description = "A2Seek aerial anomaly detection research release"
+requires-python = ">=3.12,<3.13"
+
+[project.optional-dependencies]
+train = ["torch==2.7.0", "torchvision==0.22.0", "ms-swift==3.5.3", "transformers==4.52.4", "trl==0.18.2", "peft==0.14.0", "datasets==3.2.0", "qwen-vl-utils==0.0.8"]
+dataset = ["datasets>=3,<5", "pyarrow>=18", "huggingface-hub>=0.30,<2"]
+media = ["Pillow>=10"]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.setuptools.package-data]
+a2seek = ["configs/*.json", "configs/inference/*.json", "configs/evaluation/*.json", "prompts/*.txt"]
+
+[tool.uv]
+python-preference = "only-managed"

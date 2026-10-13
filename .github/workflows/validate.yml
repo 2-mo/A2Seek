@@ -1,0 +1,17 @@
+name: Validate code
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+          version: '0.11.5'
+      - run: uv sync --locked --extra dataset --extra media
+      - run: uv run --no-sync python -m compileall -q src scripts
+      - run: uv run --no-sync python scripts/train.py --help
+      - run: uv run --no-sync python scripts/infer.py --help
+      - run: uv run --no-sync python scripts/evaluate.py --help
+      - run: uv build --wheel

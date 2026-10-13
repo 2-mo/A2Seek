@@ -1,0 +1,27 @@
+{
+  "stage": "sft",
+  "variant": "cot_single_reflection",
+  "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "arguments": {
+    "model_type": "qwen2_5_vl",
+    "train_type": "lora",
+    "torch_dtype": "bfloat16",
+    "system": "",
+    "save_strategy": "epoch",
+    "num_train_epochs": "4",
+    "warmup_ratio": "0.05",
+    "dataloader_num_workers": "2",
+    "learning_rate": "1e-5",
+    "save_total_limit": "3",
+    "split_dataset_ratio": "0",
+    "eval_strategy": "no",
+    "gradient_checkpointing": "true",
+    "target_modules": [
+      "all-linear"
+    ],
+    "per_device_train_batch_size": "1",
+    "gradient_accumulation_steps": "16",
+    "max_length": "8192"
+  },
+  "num_frames": 1
+}

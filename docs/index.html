@@ -2,43 +2,32 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="description" content="A2Seek: a reasoning-centric benchmark for aerial anomaly understanding.">
+  <meta property="og:title" content="A2Seek: Towards Reasoning-Centric Benchmark for Aerial Anomaly Understanding">
+  <meta property="og:description" content="A2Seek: a reasoning-centric benchmark for aerial anomaly understanding.">
+  <meta property="og:url" content="https://2-mo.github.io/A2Seek/">
+  <meta property="og:image" content="https://2-mo.github.io/A2Seek/static/images/carousel1.png">
+  <meta name="twitter:title" content="A2Seek: Towards Reasoning-Centric Benchmark for Aerial Anomaly Understanding">
+  <meta name="twitter:description" content="A2Seek: a reasoning-centric benchmark for aerial anomaly understanding.">
+  <meta name="twitter:image" content="https://2-mo.github.io/A2Seek/static/images/carousel1.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="A2Seek, aerial anomaly understanding, reasoning, vision-language models">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
   <title>A2Seek: Towards Reasoning-Centric Benchmark for Aerial Anomaly Understanding</title>
-  <link rel="icon" type="image/x-icon" href="static/images/narin.ico">
+  <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
@@ -97,14 +86,14 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
+                    <!-- Dataset link -->
                     <span class="link-block">
-                      <a href="https://huggingface.co/datasets/Hayneyday/A2Seek" target="_blank"
+                      <a href="https://huggingface.co/datasets/tiu2mo/A2Seek" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
+                        <i class="fas fa-database"></i>
                       </span>
-                      <span>Supplementary</span>
+                      <span>Dataset</span>
                     </a>
                   </span>
 
@@ -143,7 +132,6 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/A2Seek_Demo.mp4"
         type="video/mp4">
       </video>
@@ -204,7 +192,7 @@
             <video width="100%" controls>
               <source src="static/videos/Challenge.mp4" type="video/mp4">
             </video>
-            <p class="is-size-6 mt-2">Main Challenge of out A2Seek Dataset</p>
+            <p class="is-size-6 mt-2">Main Challenges of the A2Seek Dataset</p>
           </div>
         </div>
         
@@ -323,26 +311,24 @@
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
-      <h2 class="title">If you find our work useful, please give us a free cite:</h2>
+      <h2 class="title">Citation</h2>
+      <p>If you find A2Seek helpful, we'd appreciate a <a href="https://github.com/2-mo/A2Seek">⭐ Star</a> or a citation to our paper:</p>
       <pre><code>
-@inproceedings{Mo2025A2Seek,
-  author    = {Mo, Mengjingcheng and Tong, Xinyang and Leng, Jiaxu and Tan, Mingpi and Zheng, Jiankang and Liu, Yiran and Chen, Haosheng and Gan, Ji and Li, Weisheng and Gao, Xinbo},
-  title     = {A2Seek: Towards Reasoning-Centric Benchmark for Aerial Anomaly Understanding},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS 2025), Datasets and Benchmarks Track},
-  year      = {2025},
-  note      = {to appear},
-  url       = {https://arxiv.org/abs/2505.21962}
+@inproceedings{NEURIPS2025_de02de51,
+ author = {Mo, Mengjingcheng and Tong, Xinyang and Tan, Mingpi and Leng, Jiaxu and Zheng, JianKang and Liu, Yiran and Chen, Haosheng and Gan, Ji and Li, Weisheng and Gao, Xinbo},
+ booktitle = {Advances in Neural Information Processing Systems},
+ doi = {10.52202/085713-5057},
+ editor = {D. Belgrave and C. Zhang and H. Lin and R. Pascanu and P. Koniusz and M. Ghassemi and N. Chen},
+ publisher = {Curran Associates, Inc.},
+ title = {A2Seek: Towards Reasoning-Centric Benchmark for Aerial Anomaly Understanding},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2025/file/de02de513503962e1d21035ab50ce661-Paper-Datasets_and_Benchmarks_Track.pdf},
+ volume = {38, Main Conference},
+ year = {2025}
 }
       </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
-<!--@article{mo2025a2seek,
-  title={A2Seek: Towards Reasoning-Centric Benchmark for Aerial Anomaly Understanding},
-  author={Mo, Mengjingcheng and Tong, Xinyang and Leng, Jiaxu and Tan, Mingpi and Zheng, Jiankang and Liu, Yiran and Chen, Haosheng and Gan, Ji and Li, Weisheng and Gao, Xinbo},
-  journal={arXiv preprint arXiv:2505.21962},
-  year={2025}
-}-->
   
 
 
@@ -353,9 +339,8 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            Website template: <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, adapted from <a href="https://nerfies.github.io" target="_blank">Nerfies</a>.
+            Website code is licensed under <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>.
           </p>
 
         </div>
@@ -364,11 +349,6 @@
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
 
   </body>
   </html>

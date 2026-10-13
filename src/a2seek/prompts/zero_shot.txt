@@ -1,0 +1,19 @@
+<image>Please perform anomaly behavior detection on the given aerial video frames (sampled every 0.53 seconds).
+First, internally reason through the situation, then provide your final answer. Output the reasoning process within <think> </think>, an optional request for further observation within <seeking> </seeking>, and the final result within <answer> </answer> tags.
+Within the <think> section, use </aha> to mark the point where your self-correction or key reflection begins.
+
+Available categories: Normal, Loitering, Trespassing on Lawn, Running, Animal, Vandalism, Falling, Unable to Stand, Playing with Water, Unconventional Vehicle, Wall Climbing, Carrying Weapon, Jaywalking, Bicycling, Bullying, Lost Item, Sneaking, Theft, Fighting, Robbery, Littering.
+
+Format (strictly):
+<think>
+Optional: Your internal reasoning process goes here. If the judgment is straightforward, simply write <no need>.
+</think>
+
+<seeking>
+Optional: If further observation is needed (e.g., due to occlusion or ambiguity), specify the region to inspect in the format [x1, y1, x2, y2]. Otherwise, write <no need>.
+</seeking>
+
+<answer>
+Provide your final decision: a list of predicted categories and their corresponding regions.
+Format: ['Category1', 'Category2', ...]; [[x1, y1, x2, y2], [x1, y1, x2, y2], ...]
+</answer>
