@@ -4,6 +4,10 @@ Training, inference and evaluation for aerial anomaly understanding.
 
 [Paper](https://arxiv.org/abs/2505.21962) · [Project](https://2-mo.github.io/A2Seek/) · [中文](README.zh-CN.md)
 
+[![Overview of A2Seek](docs/static/images/overview.png)](docs/static/images/overview.png)
+
+*Overview of A2Seek (Figure 1 from the paper).*
+
 Run commands from the repository root. Training and inference require Linux and an NVIDIA GPU.
 
 | Resource | Hugging Face repository | Local directory |

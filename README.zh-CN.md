@@ -4,6 +4,10 @@
 
 [论文](https://arxiv.org/abs/2505.21962) · [项目主页](https://2-mo.github.io/A2Seek/) · [English](README.md)
 
+[![A2Seek 总览](docs/static/images/overview.png)](docs/static/images/overview.png)
+
+*A2Seek 总览（论文图 1）。*
+
 以下命令均在仓库根目录执行。训练和推理需要 Linux 和 NVIDIA GPU。
 
 | 资源 | Hugging Face 仓库 | 本地目录 |
