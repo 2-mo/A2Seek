@@ -13,6 +13,7 @@ Run commands from the repository root. Training and inference require Linux and 
 | Resource | Hugging Face repository | Local directory |
 | --- | --- | --- |
 | Dataset: annotations and images | [tiu2mo/A2Seek](https://huggingface.co/datasets/tiu2mo/A2Seek) | `data/A2Seek/` |
+| H.264 videos (optional) | [tiu2mo/A2Seek-Videos](https://huggingface.co/datasets/tiu2mo/A2Seek-Videos) | `data/A2Seek-Videos/` |
 | Final 3B model | [tiu2mo/A2Seek-R1-3B](https://huggingface.co/tiu2mo/A2Seek-R1-3B) | `models/A2Seek-R1-3B/` |
 | Final 7B model | [tiu2mo/A2Seek-R1-7B](https://huggingface.co/tiu2mo/A2Seek-R1-7B) | `models/A2Seek-R1-7B/` |
 
@@ -41,6 +42,8 @@ uv run --no-sync python scripts/data/materialize_images.py
 ```
 
 The second command restores images to `data/A2Seek/images/`.
+
+Optional videos are provided separately in [A2Seek-Videos](https://huggingface.co/datasets/tiu2mo/A2Seek-Videos), with commands for downloading a single video, a video group or the videos referenced by an annotation split.
 
 Saved sample ID lists are in `data/A2Seek/metadata/splits/`. `metadata/domain_protocol.json` records their checksums, counts and scene codes:
 

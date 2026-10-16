@@ -13,6 +13,7 @@
 | 资源 | Hugging Face 仓库 | 本地目录 |
 | --- | --- | --- |
 | 数据集：标注和图片 | [tiu2mo/A2Seek](https://huggingface.co/datasets/tiu2mo/A2Seek) | `data/A2Seek/` |
+| H.264 视频（可选） | [tiu2mo/A2Seek-Videos](https://huggingface.co/datasets/tiu2mo/A2Seek-Videos) | `data/A2Seek-Videos/` |
 | 最终 3B 权重 | [tiu2mo/A2Seek-R1-3B](https://huggingface.co/tiu2mo/A2Seek-R1-3B) | `models/A2Seek-R1-3B/` |
 | 最终 7B 权重 | [tiu2mo/A2Seek-R1-7B](https://huggingface.co/tiu2mo/A2Seek-R1-7B) | `models/A2Seek-R1-7B/` |
 
@@ -41,6 +42,8 @@ uv run --no-sync python scripts/data/materialize_images.py
 ```
 
 第二条命令将图片恢复到 `data/A2Seek/images/`。
+
+可选的视频单独放在 [A2Seek-Videos](https://huggingface.co/datasets/tiu2mo/A2Seek-Videos)，其中提供按单个视频、视频组或标注划分下载的命令。
 
 固定的样本 ID 清单位于 `data/A2Seek/metadata/splits/`，校验值、样本数和场景代码记录在 `metadata/domain_protocol.json`：
 
